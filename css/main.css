@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
+
+/* reset */
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, 
+caption, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset,
+figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup,
+html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, 
+object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, 
+sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, 
+hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+a, ins, del {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption, th {
+  text-align: left;
+}
+
+q:after, q:before {
+  content: "";
+}
+
+/* wp */
+.entry-utility .comments-link,
+.entry-utility .meta-sep { visibility:hidden; display:none; }
+.entry-utility .edit-link:before { content:" | "; }
+#comments { margin-top:15px; }
+
+#author-avatar {
+	float:left;
+	width:90px;
+}
+
+#author-description {
+	float:left;
+	width:413px;
+}
+
+/* site */
+body {
+	color:#222;
+	font-family:'Lucida Sans Unicode';
+	text-align:center; 
+}
+
+a { color:#FF61B1; }
+
+#page_container {
+	text-align:left;
+	margin:0 auto;
+	width:880px;
+}
+
+#main_container {
+	display:table;
+}
+
+#page_header {
+	background:url('../gfx/logo.png') no-repeat;
+	height:64px;
+	width:100%;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+	
+	#page_header h1 { display:none; visibility:hidden; }
+	
+	#page_header p {
+		color:rgb(255,51,153);
+		margin-left:300px;
+		padding-top:20px;
+		text-align:center;
+	}
+
+strong { font-weight:bold; }	
+
+nav {
+	display:table-cell;
+	width:180px;
+	vertical-align:top;
+	padding-top:20px;
+}
+	@media print {
+		nav { display:none; visibility:hidden; }
+	}
+
+	nav ul li a {
+		border-bottom:1px solid #aaa;
+		color:rgb(255,51,153);
+		display:block;
+		font-size:0.8em;
+		padding-top:13px;
+		padding-bottom:13px;
+		padding-left:10px;
+		text-transform:uppercase;
+		width:180px;
+	}
+	
+	nav ul li a:hover {
+		color:#a60e5b;
+		background:#FF8BC6;
+	}
+
+#page_footer {
+	width:100%;
+	color:#aaa;
+	border-top:1px solid #eee;
+	font-size:12px;
+	padding:3px;
+	margin-top:20px;
+	text-align:right;
+}
+	
+#content_container {
+	display:table-cell;
+	width:690px;
+	/*border:1px solid #ccc;
+	-moz-border-radius:20px;*/
+}
+
+	#content_container section#content,
+	.entry-content, .entry-title {
+		margin:10px;
+		font-size:1em;
+		line-height:150%;
+	}
+		
+		section#content p {
+			margin-bottom: 15px;
+		}
+		
+		#content h2,
+		h2.entry-title { 
+			font-family: 'Reenie Beanie', 'Lucida Sans Unicode', arial, serif;
+			font-size:3.5em; 
+			font-weight:normal;
+			line-height:110%;
+			margin-bottom:5px;
+			text-shadow: 2px 2px 4px #ccc;
+		}
+		@media print {
+			#content h2,
+			h2.entry-title {
+				font-family: 'Lucida Sans Unicode', arial, serif;
+				font-size:2.5em; 
+			}
+		}
+		
+		section#content h2 span { color:#FF61B1; }
+	
+		section#content span.gray {
+			color:#999;
+		}
+		
+		section#content span.pink {
+			color:#FF61B1;
+		}
+		
+		.entry-content p em strong,
+		.entry-content p stron em {
+			display:block;
+			margin-top:15px;
+			font-size:150%;
+			line-height:150%;
+			font-weight:normal;
+			background:url('../gfx/kolko.png') no-repeat ;
+		}
+
+.promowane {
+	background:url('../gfx/obiadek_glowna.jpg') no-repeat;	
+	height:300px;
+	width:690px;
+	text-shadow: 2px 2px 4px #fff; /*display:none;*/
+}
+
+	.promowane header {
+		padding-left: 5px;
+		padding-top:245px;
+	}
+	
+	.promowane h2 {
+		color:#333;
+		font-size:0.9em;
+	}
+	
+	.promowane p {
+		font-size:1.3em;
+		font-weight:bold;
+		padding-left:25px;
+		padding-top:3px;
+	}
+	
+	.promowane.obiady_dla_firm {
+		background:url('../gfx/obiady_dla_firm.jpg') no-repeat;
+	}
+	
+	.promowane.organizacja_imprez {
+		background:url('../gfx/organizacja_imprez.jpg') no-repeat;
+	}
+
+	.promowane.dobierz_do_zestawu {
+		background:url('../gfx/napoj_glowna.jpg') no-repeat;
+		height:149px;
+	}
+	
+		.promowane.dobierz_do_zestawu header {
+			padding-top:95px;
+		}
+	
+.three_columns {
+	display:table;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+	.three_columns .column {
+		background:url('../gfx/kolko.png') no-repeat;
+		display:table-cell;
+		padding-top:12px;
+		width:210px;
+		margin-right:20px;
+	}
+
+		.three_columns .column .number {
+			display:none;
+			color:#666;
+			font-size:1.3em;
+			height:12px;
+			width:12px;
+			text-align:center;
+		}
+		
+.cennik .cena {
+	text-align:right;
+}
