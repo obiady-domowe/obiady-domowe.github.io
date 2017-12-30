@@ -141,6 +141,7 @@ nav {
 }
 
 	#content_container section#content,
+	#content_container h2,
 	.entry-content, .entry-title {
 		margin:10px;
 		font-size:1em;
@@ -152,6 +153,7 @@ nav {
 		}
 		
 		#content h2,
+		#content_container h2,
 		h2.entry-title { 
 			font-family: 'Reenie Beanie', 'Lucida Sans Unicode', arial, serif;
 			font-size:3.5em; 
@@ -162,6 +164,7 @@ nav {
 		}
 		@media print {
 			#content h2,
+			#content_container h2,
 			h2.entry-title {
 				font-family: 'Lucida Sans Unicode', arial, serif;
 				font-size:2.5em; 
